@@ -5,33 +5,34 @@
 </head>
 <body>
 <button id="test">test</button>
+
 <div>
     <div>
         <div>
-
+            <input type="checkbox" name="gross" id="is-gross">is gross <br>
             <div>
 
-                <div>
+                <!--<div>-->
 
-                    <label>Description of service</label>
-                    <textarea id="defaultForm-description" name="LineDescription"></textarea>
-                </div>
+                    <!--<label>Description of service</label>-->
+                    <!--<textarea id="defaultForm-description" name="LineDescription"></textarea>-->
+                <!--</div>-->
 
-                <div>
-                    <label>Rate</label>
-                    <input type="text" id="defaultForm-rate" name="Rate" class="form-control validate">
-                </div>
-                <div>
-                    <label for="defaultForm-units">Units to charge</label>
-                    <input type="text" name="UnitsToCharge" id="defaultForm-units">
-                </div>
+                <!--<div>-->
+                    <!--<label>Rate</label>-->
+                    <!--<input type="text" id="defaultForm-rate" name="Rate" class="form-control validate">-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--<label for="defaultForm-units">Units to charge</label>-->
+                    <!--<input type="text" name="UnitsToCharge" id="defaultForm-units">-->
+                <!--</div>-->
                 <div class="md-form mb-5">
 
                     <label>Net</label>
-                    <input type="text" name="Net">
+                    <input type="text" name="Net" id="defaultForm-net">
                 </div>
                 <div>
-                    <select id="vatCodeId" name="VatCode">
+                   VAT <select id="vatCodeId" name="VatCode">
 
                         <option value="0.2">
                             20% Standard
@@ -56,4 +57,4 @@
 </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="calc.js"></script>
+<script src="../js/calc.js"></script>
