@@ -2,6 +2,16 @@ $(document).ready(function () {
     $("#test").click(function () {
         context();
     })
+    $("#calculate-net").click(function(){
+        var rate = $("#vatCodeId");
+        var gross = $("#defaultForm-gross");
+        setNet(rate.val(), gross.val());
+    })
+    $("#calculate-gross").click(function(){
+        var rate = $("#vatCodeId");
+        var net = $("#defaultForm-net");
+        setGross(rate.val(), net.val())
+    })
 });
 
 function context() {
@@ -24,6 +34,7 @@ function context() {
         }
     }
 }
+
 
 function setGross(rate, net) {
     var gross = $("#defaultForm-gross")
